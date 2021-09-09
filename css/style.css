@@ -379,6 +379,93 @@ a {
   color: #19316E;
 }
 
+.leaders {
+  padding: 50px 0;
+  background-color: rgba(49, 78, 133, 0.15);
+}
+
+.leaders__title {
+  color: #1f3c88;
+  font-size: 25px;
+  font-family: 'Gilroy-Bold';
+  margin-bottom: 50px;
+}
+
+.leaders__inner {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+
+.leaders__item {
+  flex: 0 1 calc(100% / 5 - 16px);
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.leaders__item-img {
+  max-height: 250px;
+  overflow: hidden;
+}
+
+.leaders__item-img img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.leaders__item-name {
+  background-color: #fff;
+  padding: 20px 30px;
+  text-align: center;
+  color: #1f3c88;
+  text-transform: uppercase;
+  font-family: 'Gilroy-Semibold';
+}
+
+.leaders__item-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 40px 20px;
+  background: rgba(61, 177, 102, 0.9);
+  z-index: 10;
+}
+
+.leaders__item:hover .leaders__item-over {
+  opacity: 1;
+}
+
+.leaders__item-over a {
+  display: flex;
+  align-items: center;
+  background-color: #1f3c88;
+  color: #fff;
+  padding: 10px 10px 10px 20px;
+  font-size: 16px;
+  font-family: 'Gilroy-Semibold';
+  transition: all 0.1s ease;
+  border-radius: 50px;
+  box-shadow: 0px 4px 10px rgb(31, 60, 136, 50%);
+}
+
+.leaders__item-over a:hover {
+  background-color: #19316E;
+}
+
+.leaders__item-over a svg {
+  margin-left: 10px;
+}
+
 @media (max-width: 1024px) {
   body.lock {
     overflow: hidden;
@@ -507,6 +594,10 @@ a {
   .announcements__card {
     padding: 15px 0 15px 15px;
   }
+
+  .leaders__item {
+    flex: 0 1 calc(100% / 3 - 14px);
+  }
 }
 
 @media (max-width: 768px) {
@@ -528,6 +619,10 @@ a {
 
   .announcements__card {
     flex: 0 1 100%;
+  }
+
+  .leaders__item {
+    flex: 0 1 calc(100% / 2 - 10px);
   }
 }
 
@@ -569,6 +664,10 @@ a {
 
   .news {
     padding: 50px 0;
+  }
+
+  .leaders__item {
+    flex: 0 1 100%;
   }
 }
 
