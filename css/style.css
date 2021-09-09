@@ -159,7 +159,7 @@ a {
 .swiper-slide a {
   position: absolute;
   bottom: -100%;
-  right: 100px;
+  right: 10%;
   background-color: #1f3c88;
   color: #fff;
   padding: 10px;
@@ -436,6 +436,9 @@ a {
 @media (max-width: 768px) {
   .header__logo {
     flex: 0 1 8%;
+  }
+  .swiper-slide a {
+    bottom: 50px;
   }
 }
 
