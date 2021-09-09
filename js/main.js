@@ -7,7 +7,8 @@ window.onload = () => {
 
   let swiper = new Swiper(".swiper", {
     autoplay: {
-      disableOnInteraction: false
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true
     }
   });
 }

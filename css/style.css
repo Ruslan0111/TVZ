@@ -152,7 +152,35 @@ a {
 }
 
 .swiper-slide {
-  
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-slide a {
+  position: absolute;
+  bottom: -100%;
+  right: 100px;
+  background-color: #1f3c88;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: 'Gilroy-Semibold';
+  display: flex;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.swiper-slide:hover a {
+  bottom: 50px;
+}
+
+.swiper-slide a:hover {
+  background-color: #19316E;
+}
+
+.swiper-slide a svg {
+  margin-left: 10px;
 }
 
 .swiper-slide img {
