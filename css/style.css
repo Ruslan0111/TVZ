@@ -226,7 +226,8 @@ a {
 
 .news {
   padding: 80px 0;
-  background-color: #A7D5F2;
+  background-color: #fff;
+  /*background-color: #A7D5F2;*/
 }
 
 .news__top {
@@ -312,6 +313,7 @@ a {
 
 .announcements {
   padding: 80px 0;
+  background-color: #F4F8FB;
 }
 
 .announcements__top {
@@ -619,7 +621,7 @@ a {
 
 .about {
   padding-top: 60px;
-  background-color: #F8F8F8
+  background-color: #F8F8F8;
 }
 
 .about__inner {
