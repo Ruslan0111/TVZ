@@ -1,13 +1,14 @@
 @import url('_global.css');
 
 .gallery {
-  padding: 40px 0 20px 0;
+  padding: 40px 0 40px 0;
 }
 
 .gallery__inner {
   display: flex;
   flex-wrap: wrap;
   column-gap: 20px;
+  margin-bottom: 20px;
 }
 
 .gallery__card {
