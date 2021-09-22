@@ -67,22 +67,16 @@ a {
   margin-right: 30px;
 }
 
-.header__langs {
-  list-style: none;
-  display: flex;
+.header__lang-link {
+  font-size: 22px;
+  color: #1f3c88;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .header__langs-mobile {
   display: none;
-}
-
-.header__langs li {
-  font-size: 22px;
-  color: #1f3c88;
-}
-
-.header__langs li:first-child {
-  margin-right: 15px;
 }
 
 .header__menu {
@@ -393,22 +387,18 @@ a {
     max-height: 0;
   }
 
+  .header__lang {
+    display: none;
+  }
+
   .header__langs-mobile {
-    list-style: none;
     display: flex;
     margin: 20px 0;
   }
 
-  .header__langs-mobile li {
-    font-size: 22px;
+  .header__lang-link {
     color: #fff;
-  }
-
-  .header__langs-mobile li:hover {
-    color: #1f3c88;
-  }
-
-  .header__langs-mobile li:first-child {
+    padding: 0;
     margin-right: 15px;
   }
 }

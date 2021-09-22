@@ -19,14 +19,24 @@
           <img src="img/phone.svg" alt="">       
           +998 (99) 847 64 06
         </a>
-        <ul class="header__langs">
-          <li>
-            <a href="#">Uz</a>
-          </li>
-          <li>
-            <a href="#">Ру</a>
-          </li>
-        </ul>
+        <form class="header__lang" action="{% url 'set_language' %}" method="post">
+          <!-- {% csrf_token %} -->
+          <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+          <input name="language" type="hidden" value="uz" />
+          <input class="header__lang-link" type="submit" value="Uz" />
+        </form>
+        <form class="header__lang" action="{% url 'set_language' %}" method="post">
+          <!-- {% csrf_token %} -->
+          <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+          <input name="language" type="hidden" value="ru" />
+          <input class="header__lang-link" type="submit" value="Ru" />
+        </form>
+        <form class="header__lang" action="{% url 'set_language' %}" method="post">
+          <!-- {% csrf_token %} -->
+          <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+          <input name="language" type="hidden" value="en" />
+          <input class="header__lang-link" type="submit" value="En" />
+        </form>
       </div>
       <div class="header__burger">
         <span></span>
@@ -92,14 +102,26 @@
             <a href="#" class="header__link">MAXSULOTLARIMIZ</a>
           </li>
         </ul>
-        <ul class="header__langs-mobile">
-          <li>
-            <a href="#">Uz</a>
-          </li>
-          <li>
-            <a href="#">Ру</a>
-          </li>
-        </ul>
+        <div class="header__langs-mobile">
+          <form class="header__lang-mobile" action="{% url 'set_language' %}" method="post">
+            <!-- {% csrf_token %} -->
+            <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+            <input name="language" type="hidden" value="uz" />
+            <input class="header__lang-link" type="submit" value="Uz" />
+          </form>
+          <form class="header__lang-mobile" action="{% url 'set_language' %}" method="post">
+            <!-- {% csrf_token %} -->
+            <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+            <input name="language" type="hidden" value="ru" />
+            <input class="header__lang-link" type="submit" value="Ru" />
+          </form>
+          <form class="header__lang-mobile" action="{% url 'set_language' %}" method="post">
+            <!-- {% csrf_token %} -->
+            <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+            <input name="language" type="hidden" value="en" />
+            <input class="header__lang-link" type="submit" value="En" />
+          </form>
+        </div>
       </div>
     </nav>
   </header>
