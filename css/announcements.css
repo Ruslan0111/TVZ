@@ -1,11 +1,16 @@
 @import url('_global.css');
 
+.announcements {
+  padding-bottom: 30px;
+}
+
 .announcements__inner {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   transition: all 200ms ease-in-out;
+  margin-bottom: 20px;
 }
 
 .announcements__card {

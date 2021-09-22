@@ -5,6 +5,10 @@
   background-color: rgba(49, 78, 133, 0.15);
 }
 
+.products__inner {
+  margin-bottom: 40px;
+}
+
 .products__card {
   background-color: #fff;
   display: flex;
