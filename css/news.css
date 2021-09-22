@@ -83,3 +83,15 @@
 .news__card-bottom a:hover {
   color: #19316E;
 }
+
+@media (max-width: 1024px) {
+  .news__card {
+    flex: 0 1 calc(100% / 2 - 10px);
+  }
+}
+
+@media (max-width: 650px) {
+  .news__card {
+    flex: 0 1 100%;
+  }
+}

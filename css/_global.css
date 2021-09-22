@@ -435,6 +435,10 @@ a {
   .header__menu {
     padding-top: 90px;
   }
+
+  .pagination-item {
+    margin: 0 4px;
+  }
 }
 
 @media (max-width: 400px) {
