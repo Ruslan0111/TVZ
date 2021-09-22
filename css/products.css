@@ -21,6 +21,7 @@
 .products__card-img {
   max-width: 300px;
   max-height: 190px;
+  overflow: hidden;
 }
 
 .products__card-img img {
