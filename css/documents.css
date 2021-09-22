@@ -1,7 +1,7 @@
 @import url('_global.css');
 
 .documents {
-  padding: 30px;
+  padding: 30px 0;
   background: #f5f8fb;
 }
 
@@ -36,4 +36,16 @@
 
 .documents__card-date {
   color: #1f3c88;
+}
+
+@media (max-width: 768px) {
+  .documents__card {
+    flex: 0 1 calc(100% / 2 - 10px);
+  }
+}
+
+@media (max-width: 576px) {
+  .documents__card {
+    flex: 0 1 100%;
+  }
 }
