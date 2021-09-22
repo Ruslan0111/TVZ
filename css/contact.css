@@ -7,6 +7,7 @@
 
 .contact__inner {
   display: flex;
+  align-items: flex-start;
 }
 
 .contact__info,
@@ -93,4 +94,26 @@
 
 .contact__map-inner {
   height: 300px;
+}
+
+@media (max-width: 1024px) {
+  .contact__inner {
+    display: block;
+  }
+
+  .contact__info {
+    margin-bottom: 20px
+  }
+}
+
+@media (max-width: 576px) {
+  .contact__form-input-line {
+    display: block;
+  }
+
+  .contact__form-name,
+  .contact__form-phone {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
