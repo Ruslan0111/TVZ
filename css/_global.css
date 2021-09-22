@@ -248,6 +248,49 @@ a {
   margin-bottom: 15px;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-link {
+  color: #fff;
+  background-color: #1f3c88;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  transition: all 0.2s ease;
+}
+
+.pagination-link:hover {
+  background-color: #102869;
+}
+
+.pagination-item {
+  margin: 0 15px;
+}
+
+.pagination-link-prev,
+.pagination-link-next {
+  display: flex;
+  align-items: center;
+  background-color: #1f3c88;
+  color: #fff;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.pagination-link-prev svg {
+  transform: rotate(180deg);
+  margin-right: 10px;
+}
+
+.pagination-link-next svg {
+  margin-left: 10px;
+}
+
 @media (max-width: 1024px) {
   body.lock {
     overflow: hidden;
