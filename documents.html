@@ -183,21 +183,26 @@
       <nav>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link" href="?page={{ newslar.previous_page_number }}">1</a>
+            <a class="pagination-link" href="?page=1">&laquo; first</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-link-prev" href="?page={{ 1 }}" tabindex="-1" aria-disabled="true">
+            <a class="pagination-link pagination-link-prev" href="?page={{ page_obj.previous_page_number }}">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="rgba(255,255,255,1)"/></svg>
-              <span>Previous</span>
+              <span>previous</span>
             </a>
           </li>
+
+         <li class="pagination-item">
+            <p class="pagination-link">Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.</p>
+          </li>
+
           <li class="pagination-item">
-            <a class="pagination-link pagination-link-next" href="?page={{ newslar.next_page_number }}" tabindex="1" aria-disabled="true">
-              <span>Next</span>
+            <a class="pagination-link pagination-link-next" href="?page={{ page_obj.next_page_number }}">
+              <span>next</span>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="rgba(255,255,255,1)"/></svg>
             </a>
           <li class="pagination-item">
-            <a class="pagination-link" href="?page={{ newslar.paginator.num_pages }}">3</a>
+            <a class="pagination-link" href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
           </li>
         </ul>
       </nav>

@@ -439,6 +439,18 @@ a {
   .pagination-item {
     margin: 0 4px;
   }
+
+  .pagination-link {
+    padding: 6px 4px;
+  }
+
+  .pagination-link-next svg {
+    margin-left: 2px;
+  }
+
+  .pagination-link-prev svg {
+    margin-right: 2px;
+  }
 }
 
 @media (max-width: 400px) {
