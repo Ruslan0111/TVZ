@@ -64,6 +64,16 @@
   margin-bottom: 20px;
 }
 
+.news__card-seen {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.news__card-seen svg {
+  margin-right: 5px;
+}
+
 .news__card-bottom {
   display: flex;
   justify-content: space-between;

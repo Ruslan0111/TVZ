@@ -68,6 +68,20 @@
   background: #505f79;
   color: #fff;
 }
+
+.announcements__card-seen {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 10;
+}
+.announcements__card-seen svg {
+  margin-right: 5px;
+}
+
 .announcements__card .card-info .card-about .card-tag.tag-news {
   background: #36b37e;
 }
@@ -111,4 +125,8 @@
 .announcements__card:hover .card-title {
   color: #ebecf0;
   transform: translate(0, 40px);
+}
+
+.announcements__card:hover .announcements__card-seen {
+  color: #fff;
 }
