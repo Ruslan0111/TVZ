@@ -30,6 +30,18 @@
   justify-content: space-between;
 }
 
+.documents__card-footer a {
+  display: flex;
+  align-items: center;
+}
+
+.documents__card-footer a img {
+  max-width: 100%;
+  width: 24px;
+  margin-right: 5px;
+  display: block;
+}
+
 .documents__card-footer a:hover {
   color: #1f3c88;
 }
